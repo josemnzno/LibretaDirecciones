@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-// Clase principal que contiene el punto de entrada del programa
 public class AddressBookApplication {
     private static AddressBook addressBook = AddressBook.getInstance();
     private static Scanner scanner = new Scanner(System.in);
@@ -58,7 +57,6 @@ public class AddressBookApplication {
             System.out.println();
         }
     }
-//
     public static void loadEntriesFromFile() {
         System.out.print("Ingrese la ruta del archivo: ");
         String filePath = scanner.nextLine();
@@ -88,7 +86,7 @@ public class AddressBookApplication {
             System.out.println("El archivo no existe o no se puede acceder a él.");
         }
 
-        // Implementar la carga de entradas desde un archivo
+
         System.out.println("Cargando entradas desde un archivo...");
     }
     public static void addEntry() {
